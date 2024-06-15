@@ -1,0 +1,161 @@
+@media only screen and (max-width: 600px) {
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: url('fondo.jpg') no-repeat center center fixed;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        background-color: rgba(255, 94, 126, 0.9); /* Fondo más transparente */
+        color: white;
+        padding: 30px;
+        width: 100%;
+        text-align: center;
+        font-size: 2em;
+        text-shadow: 2px 2px 4px #000;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    main {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-list {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        margin-top: 20px;
+    }
+
+    .card {
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        margin: 20px;
+        overflow: hidden;
+        max-width: 350px;
+        text-align: center;
+        transition: transform 0.3s;
+    }
+    
+    .card button {
+        background-color: #ff5e7e;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        margin: 15px 0;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+        font-size: 1em;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .card button:hover {
+        background-color: #ff3e5e;
+        transform: translateY(-3px);
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        border-bottom: 5px solid #ff5e7e;
+    }
+
+    .card h2 {
+        color: #ff5e7e;
+        font-size: 1.5em;
+        margin: 15px 0;
+    }
+
+    .card p {
+        padding: 0 15px;
+        font-size: 1em;
+        color: #333;
+    }
+
+    .card .btn {
+        background-color: #ff5e7e;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        margin: 15px 0;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+        font-size: 1em;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .card .btn:hover {
+        background-color: #ff3e5e;
+        transform: translateY(-3px);
+    }
+
+    .points-list {
+        max-width: 600px;
+        margin-top: 20px;
+        background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+        border-radius: 15px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        padding: 20px;
+    }
+
+    .points {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .points li {
+        font-size: 1.2em;
+        color: #333;
+        margin-bottom: 10px;
+        padding-left: 20px;
+        position: relative;
+    }
+
+    .points li:before {
+        content: '\2022'; /* Código del bullet point (•) */
+        color: #ff5e7e;
+        font-size: 1.5em;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .btn-back {
+        display: inline-block;
+        background-color: #ff5e7e;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 25px;
+        margin-top: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .btn-back:hover {
+        background-color: #ff3e5e;
+        transform: translateY(-3px);
+    }
+    
+    /* Reducing the size of h1 elements on mobile */
+    h1 {
+        font-size: 1.5em; /* Adjust this value as needed */
+    }
+}
+
